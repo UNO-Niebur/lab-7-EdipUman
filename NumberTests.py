@@ -28,6 +28,12 @@ def Divisible1to20(num):
       return False
   return True
 
+#Define Palinddrom
+def Palindrome(num):
+    s = str(num)
+    return s == s[::-1]
+
+
 def addNum(numList, num):
   """Adds the given number to the given list. Does not add duplicate values."""
 
