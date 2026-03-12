@@ -15,11 +15,17 @@ def getFactors(num):
   for f in range(1, num//2 +1):
     if num % f == 0:
       factors.append(f)
-      
+  return factors 
 
 
 def isPrime(p):
   """Returns boolean (True/False) if the value given is prime."""
+ if p < 2:
+    return False
+
+  for i in range(2, int(p**0.5) + 1):
+    if p % i == 0:
+      return False
 
   return True
 
