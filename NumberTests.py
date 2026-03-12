@@ -10,24 +10,29 @@ def isThreeOrFive(n):
 
 
 def getFactors(num):
-  """returns a  list of all factors of a given integer"""
+  """returns a list of all factors of a given integer"""
   factors = []
-  for f in range(1, num//2 +1):
+
+  for f in range(1, int(num**0.5) + 1):
     if num % f == 0:
       factors.append(f)
-  return factors 
 
+      other = num // f
+      if other != f:
+        factors.append(other)
+
+  return factors
 
 def isPrime(p):
   """Returns boolean (True/False) if the value given is prime."""
- if p < 2:
+if p < 2:
+  return False
+
+for i in range(2, int(p**0.5) + 1):
+  if p % i == 0:
     return False
 
-  for i in range(2, int(p**0.5) + 1):
-    if p % i == 0:
-      return False
-
-  return True
+return True
 
 def isEven(n):
   """Returns boolean about given value being even."""
