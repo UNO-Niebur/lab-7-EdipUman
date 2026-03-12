@@ -25,14 +25,14 @@ def getFactors(num):
 
 def isPrime(p):
   """Returns boolean (True/False) if the value given is prime."""
-if p < 2:
-  return False
-
-for i in range(2, int(p**0.5) + 1):
-  if p % i == 0:
+  if p < 2:
     return False
 
-return True
+  for i in range(2, int(p**0.5) + 1):
+    if p % i == 0:
+      return False
+
+  return True
 
 def isEven(n):
   """Returns boolean about given value being even."""
