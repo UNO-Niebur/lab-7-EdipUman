@@ -8,6 +8,16 @@ def isThreeOrFive(n):
   else:
     return False
 
+
+def getFactors(num):
+  """returns a  list of all factors of a given integer"""
+  factors = []
+  for f in range(1, num//2 +1):
+    if num % f == 0:
+      factors.append(f)
+      
+
+
 def isPrime(p):
   """Returns boolean (True/False) if the value given is prime."""
 
