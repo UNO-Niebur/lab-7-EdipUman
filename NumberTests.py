@@ -28,7 +28,7 @@ def Divisible1to20(num):
       return False
   return True
 
-#Define Palinddrom
+#Define Palindrome
 def Palindrome(num):
     s = str(num)
     return s == s[::-1]
