@@ -20,6 +20,13 @@ def isEven(n):
     return True
   else:
     return False
+    
+#returns true if num is evenly divisble by all numbers 1-20
+def Divisible1to20(num):
+  for i in range (1,21):
+    if num % i != 0:
+      return False
+  return True
 
 def addNum(numList, num):
   """Adds the given number to the given list. Does not add duplicate values."""
