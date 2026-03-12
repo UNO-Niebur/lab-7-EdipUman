@@ -4,7 +4,7 @@
 #Assignment: Lab 7
 #Problem  : 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 #What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
-#skips all numbers that are not multiples of 20 to be more efficient
+# code skips all numbers that are not multiples of 20 to be more efficient
 
 
 from NumberTests import Divisible1to20
